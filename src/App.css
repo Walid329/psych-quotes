@@ -2,11 +2,10 @@ body {
   background-color: #f4f1e0;
   font-family: 'Courier New', monospace;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .sbpd-container {
@@ -15,7 +14,7 @@ body {
   padding: 20px;
   background: #fffef8;
   box-shadow: 5px 5px 0px #ccc;
-  position: relative;
+  margin: 20px auto; 
 }
 
 .source {
@@ -99,3 +98,22 @@ margin: 0 auto;
   background-color: #3b8b63;
 }
 
+.footer {
+  background-color: rgb(238, 238, 217);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  text-align: center;
+  color: #aeacac;
+  padding: 15px 0; 
+  margin-top: 87px; 
+}
+
+.footer a
+{
+  color: #555;
+}
+
+.footer p {
+  margin: 2px 0;
+  font-size: smaller;
+}
