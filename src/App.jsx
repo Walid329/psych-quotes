@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import quotes from './quotes.json';
-import pineapple from './assets/android-chrome-192x192.png';
 import './App.css';
 
 export default function SBPDQuotes() {
@@ -14,7 +13,8 @@ export default function SBPDQuotes() {
   return (
     <div className="sbpd-container">
       <header>
-        <img src={pineapple} alt="pineapple" className="badge" />
+        {/* Pineapple image from public folder */}
+        <img src="/android-chrome-192x192.png" alt="pineapple" className="badge" />
         <h1>Santa Barbara Police Department</h1>
         <h2>Random Quote Generator</h2>
       </header>
