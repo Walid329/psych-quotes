@@ -13,7 +13,7 @@ export default function SBPDQuotes() {
   return (
     <div className="sbpd-container">
       <header>
-        {/* Load pineapple directly from public */}
+      
         <img src="/android-chrome-192x192.png" alt="pineapple" className="badge" />
         <h1>Santa Barbara Police Department</h1>
         <h2>Random Quote Generator</h2>
@@ -29,9 +29,9 @@ export default function SBPDQuotes() {
         <p className="label">Character:</p>
         <p className="value">{quote ? quote.character : "----"}</p>
 
-        {quote && quote.sourceUrl && (
+        {quote && quote.url && (
           <p className="source" style={{ textAlign: 'right', fontSize: '0.8rem' }}>
-            <a href={quote.sourceUrl} target="_blank" rel="noopener noreferrer">
+            <a href={quote.url} target="_blank" rel="noopener noreferrer">
               Source
             </a>
           </p>
