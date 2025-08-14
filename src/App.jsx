@@ -13,7 +13,7 @@ export default function SBPDQuotes() {
   return (
     <div className="sbpd-container">
       <header>
-        {/* Pineapple image from public folder */}
+        {/* Load pineapple directly from public */}
         <img src="/android-chrome-192x192.png" alt="pineapple" className="badge" />
         <h1>Santa Barbara Police Department</h1>
         <h2>Random Quote Generator</h2>
@@ -21,14 +21,10 @@ export default function SBPDQuotes() {
 
       <div className="case-file">
         <p className="label">Case ID:</p>
-        <p className="value">
-          {quote ? `SBPD-${Math.floor(Math.random() * 9999)}` : "----"}
-        </p>
+        <p className="value">{quote ? `SBPD-${Math.floor(Math.random() * 9999)}` : "----"}</p>
 
         <p className="label">Quote:</p>
-        <p className="value quote-text">
-          {quote ? `"${quote.quote}"` : "Tap the pineapple!"}
-        </p>
+        <p className="value quote-text">{quote ? `"${quote.quote}"` : "Tap the pineapple!"}</p>
 
         <p className="label">Character:</p>
         <p className="value">{quote ? quote.character : "----"}</p>
