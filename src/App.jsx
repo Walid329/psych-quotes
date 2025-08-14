@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import quotes from './quotes.json';
-import badge from './assets/android-chrome-192x192.png'; 
+import pineapple from './assets/android-chrome-192x192.png';
 import './App.css';
 
 export default function SBPDQuotes() {
@@ -14,7 +14,7 @@ export default function SBPDQuotes() {
   return (
     <div className="sbpd-container">
       <header>
-        <img src={badge} alt="pineapple-emoji" className="badge" />
+        <img src={pineapple} alt="pineapple" className="badge" />
         <h1>Santa Barbara Police Department</h1>
         <h2>Random Quote Generator</h2>
       </header>
@@ -33,13 +33,13 @@ export default function SBPDQuotes() {
         <p className="label">Character:</p>
         <p className="value">{quote ? quote.character : "----"}</p>
 
-        <p className="source" style={{ textAlign: 'right', fontSize: '0.8rem' }}>
-          {quote && quote.sourceUrl && (
+        {quote && quote.sourceUrl && (
+          <p className="source" style={{ textAlign: 'right', fontSize: '0.8rem' }}>
             <a href={quote.sourceUrl} target="_blank" rel="noopener noreferrer">
               Source
             </a>
-          )}
-        </p>
+          </p>
+        )}
 
         <p className="label">Season/Episode:</p>
         <p className="value">{quote ? quote.season_episode : "----"}</p>
