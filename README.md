@@ -1,1 +1,1 @@
-
+https://randompsychquote.netlify.app/
