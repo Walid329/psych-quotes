@@ -9,6 +9,7 @@ body {
 }
 
 .sbpd-container {
+  position: relative; /* add this */
   max-width: 600px;
   border: 2px solid #333;
   padding: 20px;
@@ -16,6 +17,7 @@ body {
   box-shadow: 5px 5px 0px #ccc;
   margin: 20px auto; 
 }
+
 
 .source {
   position: absolute;
